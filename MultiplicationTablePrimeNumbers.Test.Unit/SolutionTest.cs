@@ -103,7 +103,7 @@ namespace MultiplicationTablePrimeNumbers.Test.Unit
         }
 
         [Fact]
-        public void CheckValidNumberZero_ShouldReturn_False()
+        public void CheckValidNumberZeroShouldReturnFalse()
         {
             var number = 0;
             //Act

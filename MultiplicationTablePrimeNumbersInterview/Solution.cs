@@ -10,10 +10,10 @@ namespace MultiplicationTablePrimeNumbersInterview
             //num + 1 : Prime number creation
             while (listOfPrime.Count < num + 1)
             {
-                if (IsPrimeNumber(count))
-                {
+
+                if(IsPrimeNumber(count))
                     listOfPrime.Add(count);
-                }
+
                 count++;
             }
             return listOfPrime;
@@ -55,16 +55,12 @@ namespace MultiplicationTablePrimeNumbersInterview
         public static bool IsPrimeNumber(int num)
         {
             if (num < 2)
-            {
                 return false;
-            }
 
             for (int i = 2; i <= num / 2; i++)
             {
                 if (num % i == 0)
-                {
                     return false;
-                }
             }
             return true;
         }
