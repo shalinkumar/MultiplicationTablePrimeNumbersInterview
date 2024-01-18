@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationTablePrimeNumbersInterview", "MultiplicationTablePrimeNumbersInterview\MultiplicationTablePrimeNumbersInterview.csproj", "{DF2DABE6-E1A9-4E0C-B34D-61F780D978FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationTablePrimeNumbers.Test.Unit", "MultiplicationTablePrimeNumbers.Test.Unit\MultiplicationTablePrimeNumbers.Test.Unit.csproj", "{21137C1C-615C-49B9-88C8-E211F1AD435A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DF2DABE6-E1A9-4E0C-B34D-61F780D978FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF2DABE6-E1A9-4E0C-B34D-61F780D978FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF2DABE6-E1A9-4E0C-B34D-61F780D978FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21137C1C-615C-49B9-88C8-E211F1AD435A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21137C1C-615C-49B9-88C8-E211F1AD435A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21137C1C-615C-49B9-88C8-E211F1AD435A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21137C1C-615C-49B9-88C8-E211F1AD435A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
