@@ -81,5 +81,35 @@ namespace MultiplicationTablePrimeNumbers.Test.Unit
             _ = result[8].ShouldBeOfType<int>();
             result[8].ShouldBe(25);
         }
+
+        [Fact]
+        public void CheckValidNumber_ShouldReturn_True()
+        {
+            var number = 1;
+            //Act
+            var response = Solution.CheckValidNumber(number);
+            //Assert
+            Assert.True(response);
+        }
+
+        [Fact]
+        public void CheckValidNumber_ShouldReturn_False()
+        {
+            var number = -1;
+            //Act
+            var response = Solution.CheckValidNumber(number);
+            //Assert
+            Assert.False(response);
+        }
+
+        [Fact]
+        public void CheckValidNumberZero_ShouldReturn_False()
+        {
+            var number = 0;
+            //Act
+            var response = Solution.CheckValidNumber(number);
+            //Assert
+            Assert.False(response);
+        }
     }
 }

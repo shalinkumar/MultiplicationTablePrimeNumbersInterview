@@ -21,29 +21,36 @@ namespace MultiplicationTablePrimeNumbersInterview
 
         public static List<int> PrintGrid(int num)
         {
-            var rows = GetPrimeNumbers(num);
-            var columns = rows;
             var gridList = new List<int>();
 
-            Console.Write("     ");
+            if (CheckValidNumber(num))
+            {
+                var rows = GetPrimeNumbers(num);
+                var columns = rows;                
 
-            foreach (int columnNum in columns)
-            {
-                Console.Write(" {0,-3} ", columnNum);
-            }
-            Console.Write("\n\n");
-            foreach (int rowNum in rows)
-            {
-                Console.Write("{0,-3}| ", rowNum);
+                Console.Write("     ");
+
                 foreach (int columnNum in columns)
                 {
-                    Console.Write(" {0,-3} ", columnNum * rowNum);
-                    gridList.Add(columnNum * rowNum);
+                    Console.Write(" {0,-3} ", columnNum);
                 }
                 Console.Write("\n\n");
+                foreach (int rowNum in rows)
+                {
+                    Console.Write("{0,-3}| ", rowNum);
+                    foreach (int columnNum in columns)
+                    {
+                        Console.Write(" {0,-3} ", columnNum * rowNum);
+                        gridList.Add(columnNum * rowNum);
+                    }
+                    Console.Write("\n\n");
+                }
             }
+            
             return gridList;
         }
+
+        public static bool CheckValidNumber(int num) => num > 0;        
 
         public static bool IsPrimeNumber(int num)
         {
